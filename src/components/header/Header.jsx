@@ -5,7 +5,7 @@ import { BsSun, BsMoon } from 'react-icons/bs'
 import './header.css'
 import { Link } from 'react-scroll'
 import { animateScroll } from 'react-scroll'
-import { get } from 'react-scroll/modules/mixins/scroller'
+import shapeOne from '../../assets/shape-1.png'
 
 const getStorageTheme = () => {
     let theme = 'light-theme';

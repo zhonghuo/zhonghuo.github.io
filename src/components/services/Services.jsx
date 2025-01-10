@@ -1,5 +1,6 @@
 import React from 'react'
 import './services.css'
+import shapeOne from '../../assets/shape-1.png'
 import { services } from '../../Data'
 import { FaArrowRight } from 'react-icons/fa'
 import shapeTwo from '../../assets/shape-2.png'
@@ -51,6 +52,10 @@ const Services = () => {
                 )
             })}
         </Swiper>
+
+        <div className="section__deco deco__right">
+            <img src={shapeOne} alt="" className="shape"/>
+        </div>
     </section>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import profileImg from '../../assets/profile-img.png'
 import shapeOne from '../../assets/shape-1.png'
 import shapeTwo from '../../assets/shape-2.png'
-
+import NLP_HW3_NTHU_111062313 from '../../assets/NLP_HW3_NTHU_111062313.pdf'
 import { FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa'
 import './home.css'
 
@@ -66,13 +66,17 @@ const Home = () => {
             </div>
 
             <div className='home__btns'>
-                <a href='https://youtu.be/K1uuK4QdvGY?si=LMQzDchhFVzp_pNA' target="_blank" rel="noopener noreferrer"  className='btn text-cs'>
-                    Download CV
+                <a  download='' href={NLP_HW3_NTHU_111062313} className='btn text-cs'>
+                    自然語言處理作業三
                 </a>
-                <a href='https://leetcode.com/problemset/'  target="_blank" rel="noopener noreferrer" className='hero__link text-cs'>
+                <a href='#skills' className='hero__link text-cs'>
                     My Skills
                 </a>
             </div>
+        </div>
+
+        <div className="section__deco deco__left">
+            <img src={shapeOne} alt="" className="shape"/>
         </div>
     </div>
   </section>

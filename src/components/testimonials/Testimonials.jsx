@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules';
 import './testimonials.css'
+import shapeOne from '../../assets/shape-1.png'
 
 const Testimonials = () => {
   return (
@@ -52,6 +53,11 @@ const Testimonials = () => {
                 )
             })}
         </Swiper>
+
+        <div className="section__deco deco__right">
+            <img src={shapeOne} alt="" className="shape"/>
+        </div>
+
     </section>
   )
 }
