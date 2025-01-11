@@ -17,7 +17,9 @@ const Testimonials = () => {
             My <span>Customers Say</span>
         </p>
 
-        <Swiper slidesPerView={1}
+        <Swiper
+        spaceBetween={30}
+        slidesPerView={1}
         pagination={{
           clickable: true,
         }}
@@ -57,7 +59,9 @@ const Testimonials = () => {
         <div className="section__deco deco__right">
             <img src={shapeOne} alt="" className="shape"/>
         </div>
-
+        <div className="section__bg-wrapper">
+            <span className="bg__title">Reviews</span>
+        </div>
     </section>
   )
 }

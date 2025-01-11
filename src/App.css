@@ -15,8 +15,8 @@
     --body-font: 'Jost', sans-serif;
     --second-font: 'Caveat', cursive;
 
-    --biggest-font-size: 90px;
-    --h1-font-size: 44px;
+    --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+    --h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
     --h2-font-size: 30px;
     --h3-font-size: 28px;
     --h4-font-size: 24px;
@@ -54,6 +54,15 @@
 
 .light-theme .skills__percentage span {
     background: var(--primary-color);
+}
+
+.light-theme .shape {
+    filter: invert(0);
+    opacity: 1;
+}
+
+.light-theme .bg__title {
+    color: rgba(0, 0, 0, 0.02);
 }
 
 html {
@@ -123,7 +132,7 @@ img {
 
 .container{
     max-width: 1300px;
-    padding-inline: 12px;
+    padding-inline: 12px !important;
     margin-inline: auto;
 }
 
@@ -182,6 +191,8 @@ img {
 
 .shape {
     position: absolute;
+    filter: invert(1);
+    opacity: 0.6;
 }
 
 .section {
@@ -219,6 +230,7 @@ img {
     overflow: hidden;
     text-align: left;
     position: relative;
+    z-index: 10;
 }
 
 .card-one {
@@ -308,4 +320,20 @@ img {
 
 .deco__right .shape {
     right: -170px;
+}
+
+.section__bg-wrapper {
+    position: absolute;
+    bottom: 148px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg__title {
+    font-size: clamp(15.625rem, 13.5417rem + 9.5238vw, 21.875rem);
+    font-family: var(--second-font);
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1px;
+    color: rgba(255, 255, 255, 0.02);
 }

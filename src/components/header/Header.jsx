@@ -94,6 +94,10 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
+
+                <div className="section__deco deco__left header__deco">
+                    <img src={shapeOne} alt="" className="shape"/>
+                </div>
             </div>
 
             <div className="nav__btns">

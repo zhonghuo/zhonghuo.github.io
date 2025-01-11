@@ -17,7 +17,9 @@ const Services = () => {
             My <span>Services</span>
         </p>
 
-        <Swiper slidesPerView={1}
+        <Swiper
+        spaceBetween={30}
+        slidesPerView={1}
         pagination={{
           clickable: true,
         }}
@@ -55,6 +57,10 @@ const Services = () => {
 
         <div className="section__deco deco__right">
             <img src={shapeOne} alt="" className="shape"/>
+        </div>
+
+        <div className="section__bg-wrapper">
+            <span className="bg__title">Dervices</span>
         </div>
     </section>
   )
